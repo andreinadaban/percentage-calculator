@@ -1,0 +1,32 @@
+{
+    "name": "percentage-calculator",
+    "description": "A hybrid desktop app and browser extension used to calculate percentages.",
+    "version": "1.0.0",
+    "author": "Andrei Nadaban",
+    "email": "contact@andreinadaban.ro",
+    "homepage": "",
+    "license": "GPL-3.0+",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder"
+    },
+    "devDependencies": {
+        "electron": "7.1.7",
+        "electron-builder": "21.2.0",
+        "electron-icon-builder": "1.0.2"
+    },
+    "build": {
+        "appId": "ro.andreinadaban.percentagecalculator",
+        "productName": "Percentage Calculator",
+        "copyright": "Copyright © 2020 Andrei Nadaban",
+        "linux": {
+            "target": "deb",
+            "maintainer": "Andrei Nadaban",
+            "category": "Utility"
+        },
+        "mac": {
+            "category": "public.app-category.utilities"
+        }
+    }
+}

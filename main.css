@@ -1,0 +1,112 @@
+:root {
+    --color-accent: #00cd8c;
+    --color-dark: #2d2940;
+    --color-gray: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: var(--color-dark);
+}
+
+body {
+    opacity: 0;
+}
+
+body.visible {
+    opacity: 1;
+}
+
+body.visible input,
+body.visible button {
+    transition: all 0.4s cubic-bezier(.215,.61,.355,1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    border: 1px solid var(--color-dark);
+}
+
+button {
+    height: 40px;
+    padding: 0 14px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+}
+
+.app {
+    padding: 20px;
+}
+
+.app-row {
+    display: grid;
+    grid-template-columns: 110px 110px 110px 200px 110px;
+    align-items: center;
+}
+
+.app-form:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.app-text,
+.app-controls {
+    padding: 0 10px;
+}
+
+.app-controls {
+    display: flex;
+}
+
+.app-button-submit {
+    color: var(--color-dark);
+    background: transparent;
+    border: 2px solid var(--color-accent);
+}
+
+.app-button-submit:hover,
+.app-button-submit:focus {
+    background: var(--color-accent);
+}
+
+.app-button-reset {
+    color: var(--color-dark);
+    background: var(--color-gray);
+    border: 2px solid var(--color-gray);
+}
+
+.app-button-reset:hover,
+.app-button-reset:focus {
+    background: transparent;
+}
+
+.app-result {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
