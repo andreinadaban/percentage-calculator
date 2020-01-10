@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body id="body">
+    <div class="app">
+        <form class="app-form">
+            <div class="app-row">
+                <div class="app-col">
+                    <input type="number" step="0.01" min="0" class="app-input-1" autofocus>
+                </div>
+                <div class="app-col app-text">
+                    % of
+                </div>
+                <div class="app-col">
+                    <input type="number" step="0.01" min="0" class="app-input-1">
+                </div>
+                <div class="app-col app-controls">
+                    <button type="submit" class="app-button-submit">Calculate</button>
+                    <button class="app-button-reset" id="app-button-reset-1">Reset</button>
+                </div>
+                <div class="app-col app-result" id="app-result-1"></div>
+            </div>
+        </form>
+        <form class="app-form">
+            <div class="app-row">
+                <div class="app-col">
+                    <input type="number" step="0.01" min="0" class="app-input-2">
+                </div>
+                <div class="app-col app-text">
+                    is what % of
+                </div>
+                <div class="app-col">
+                    <input type="number" step="0.01" min="0" class="app-input-2">
+                </div>
+                <div class="app-col app-controls">
+                    <button type="submit" class="app-button-submit">Calculate</button>
+                    <button class="app-button-reset" id="app-button-reset-2">Reset</button>
+                </div>
+                <div class="app-col app-result" id="app-result-2"></div>
+            </div>
+        </form>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>
