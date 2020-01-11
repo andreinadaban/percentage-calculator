@@ -1,6 +1,6 @@
 {
     "name": "percentage-calculator",
-    "description": "A hybrid desktop app and browser extension used to calculate percentages.",
+    "description": "A simple desktop app used to calculate percentages.",
     "version": "1.0.1",
     "author": "Andrei Nadaban",
     "email": "contact@andreinadaban.ro",
