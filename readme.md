@@ -1,6 +1,10 @@
+![alt text](build/browser/icons/48x48.png)
+
 # Percentage Calculator
 
 A hybrid desktop app and browser extension used to calculate percentages.
+
+![alt text](assets/screenshot.png)
 
 ## Features
 
